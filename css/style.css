@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #f6f4e6;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cs-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #52575d;
+  color: #f6f4e6;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 25vh;
+  border-radius: 0 0 15px 15px;
+}
+
+.cs-header .cs-user-image {
+  position: relative;
+  margin: 20px;
+  padding: 20px 17px;
+  background: #fddb3a;
+  border-radius: 10px;
+}
+
+.cs-header .cs-user-image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: #41444b;
+  border-radius: 10px;
+}
+
+.cs-header .cs-user-image img {
+  position: relative;
+  width: 45px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.cs-header .cs-user-info .cs-user {
+  font-size: 2em;
+}
+
+.cs-header .cs-user-info .cs-username {
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.cs-sect-1 nav.cs-tabs {
+  background: #41444b;
+  width: 450px;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 0 15px 15px;
+}
+
+.cs-sect-1 nav.cs-tabs .cs-btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 180px;
+  height: 40px;
+  border-radius: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #41444b;
+  background: #f6f4e6;
+}
+
+.cs-sect-2 .cs-lists {
+  position: relative;
+  list-style: none;
+  margin-top: 30px;
+  width: 450px;
+  height: 400px;
+  overflow-y: scroll;
+  /* create custome scrollbar */
+  /* Set Scrollbar width */
+  /* set Track */
+  /* set Thumb */
+}
+
+.cs-sect-2 .cs-lists::-webkit-scrollbar {
+  width: 3px;
+}
+
+.cs-sect-2 .cs-lists::-webkit-scrollbar-track {
+  margin: 10px;
+}
+
+.cs-sect-2 .cs-lists::-webkit-scrollbar-thumb {
+  background: #52575d;
+  border-radius: 20px;
+}
+
+.cs-sect-2 .cs-lists .cs-list-items {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.cs-sect-2 .cs-lists .cs-list-items .cs-link {
+  text-decoration: none;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #41444b;
+  color: #f6f4e6;
+  letter-spacing: 1px;
+  height: 70px;
+  width: 100%;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=style.css.map */
